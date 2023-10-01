@@ -1,0 +1,178 @@
+
+body, h1, h2, ul, li, nav {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+      text-align: center;
+  }
+
+  form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      height:570px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+      display: block;
+      margin-top: 20px;
+  }
+
+  input[type="text"],
+  textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+
+  input[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+
+.active {
+text-decoration: underline; /* Highlight color */
+color: #fff; /* Text color on highlight */
+}
+
+/* Style for other navigation items (optional) */
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+
+
+
+  
+    header {
+        z-index: 1;
+        margin :0;
+        font-family: sans-serif;
+        background-color: #ff5722;
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width:98%;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    .item-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.2s;
+        width: 350px;
+        margin-left: 550px;
+    }
+    
+    .order-button {
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .order-button:hover {
+        background-color: #ff4500;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block
+        }
+        .sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Show the sub-dropdown content when hovering over a sub-dropdown item */
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+  
+}
+.sub-dropdown:hover{
+    background-color: #f1f1f1;
+}
